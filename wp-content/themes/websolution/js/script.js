@@ -3,12 +3,10 @@ jQuery(document).ready(function ($) {
         adaptiveHeight:false,
         enableDrag:false,
         item:1,
-        slideMargin:0,
         loop:false,
         auto:false,
-        speed:1000,
-        pause: 5000,
-        enableTouch: true,
+        pager: false,
+
     });
 
 

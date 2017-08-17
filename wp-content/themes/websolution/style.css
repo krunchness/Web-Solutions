@@ -660,7 +660,7 @@ ul#slides li .content-wrap {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 150px;
+  top: 125px;
   padding: 0 10%; }
 
 .banner-title {
@@ -710,7 +710,7 @@ ul#slides li .content-wrap {
 ## Services Section
 --------------------------------------------------------------*/
 #services-section {
-  background: url("../websolution/images/services-bg.jpg");
+  background: url("../websolution/images/services-web-bg.jpg");
   background-size: cover; }
 
 .img-container img {
@@ -724,4 +724,4 @@ ul#slides li .content-wrap {
   color: #fffffe; }
 .service-item p {
   font-size: 13px;
-  color: #7e969e; }
+  color: #fff; }

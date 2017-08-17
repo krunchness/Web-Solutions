@@ -1,8 +1,5 @@
 <?php global $redux_data; ?>
 <section id="front-page-slider">
-	
-		
-	
 	<?php if (isset($redux_data['fx-slider-opt']) && !empty($redux_data['fx-slider-opt'])) { ?>
 	<ul id="slides" class="lightSlider">
     <?php foreach ($redux_data['fx-slider-opt'] as $fx_slider): ?>
@@ -23,7 +20,7 @@
 		    </div>
 	    </div>
       </div>
-      <img src="<?php echo $redux_img;?>" title="<?php echo $title_txt; ?>" alt="<?php echo $alt_text; ?>"/>
+      <img src="<?php echo $redux_img;?>" title="<?php echo $title_txt; ?>" alt="<?php echo $alt_text; ?>" />
     </li>
     <?php endforeach ?>
     <?php } ?>
