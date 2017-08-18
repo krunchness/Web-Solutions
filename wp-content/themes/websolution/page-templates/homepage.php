@@ -137,6 +137,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
+		<section></section>
 	</main><!-- #main -->
 </div><!-- #primary-->
 <?php get_footer(); ?>
