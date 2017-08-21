@@ -52,6 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Welcome Section
     ## Services Section
     ## Recent Projects Section
+    ## Testimonial Section
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
@@ -355,6 +356,13 @@ ins {
 
 big {
     font-size: 125%;
+}
+
+#recent-projects, #testimonial-section {
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1067,16 +1075,11 @@ ul#slides {
 }
 
 /*--------------------------------------------------------------
-## Recent Project Section
+## Recent Projects Section
 --------------------------------------------------------------*/
-#recent-projects {
-    h2 {
-        font-size: 35px;
-    }
-}
 
 #recent-proj {
-    margin: 30px 0;
+    margin: 35px 0;
 
     li p, .lslide.active {
         background: #8dffc0;
@@ -1088,4 +1091,28 @@ ul#slides {
             background: #252531;
         }
     }
+}
+
+/*--------------------------------------------------------------
+## Testimonial Section
+--------------------------------------------------------------*/
+#testimonial-section {
+    background: #f6f6f6;
+}
+
+.testimonial-wrap {
+    &::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-size: 45px;
+        color: #269add;
+    }
+
+    padding: 40px;
+    background: #ffffff;
+    font-size: 16px;
+}
+
+#testimonial{
+    padding: 30px 0;
 }

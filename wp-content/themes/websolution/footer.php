@@ -10,7 +10,13 @@
  */
 
 ?>
-
+		<div class="footer-cta">
+			<div class="container">
+				<div class="row">
+					<h3>Not Sure where to start? Let's talk websites</h3>
+				</div>
+			</div>
+		</div>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
