@@ -50,12 +50,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Banner
     ## Welcome Section
     ## Services Section
+    ## Recent Projects Section
+    ## Testimonial Section
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -248,6 +250,10 @@ mark, ins {
 big {
   font-size: 125%; }
 
+#recent-projects h2, #testimonial-section h2 {
+  font-size: 35px;
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -397,7 +403,7 @@ a:hover, a:active {
 .main-navigation li:hover > ul, .main-navigation li li.focus > ul {
   left: auto; }
 .main-navigation .current_page_item a {
-  color: #582334; }
+  color: #000000; }
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -660,7 +666,11 @@ ul#slides li .content-wrap {
   margin: 0 auto;
   left: 0;
   right: 0;
+
+  top: 105px;
+
   top: 125px;
+
   padding: 0 10%; }
 
 .banner-title {
@@ -689,7 +699,7 @@ ul#slides li .content-wrap {
   margin: 0; }
 
 .welcome-head {
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 47px;
   color: #87bc37;
   margin-bottom: 2px; }
@@ -710,6 +720,9 @@ ul#slides li .content-wrap {
 ## Services Section
 --------------------------------------------------------------*/
 #services-section {
+  background: url("../websolution/images/services-bg.jpg");
+  background-size: cover;
+  padding: 60px; }
   background: url("../websolution/images/services-web-bg.jpg");
   background-size: cover; }
 
@@ -717,11 +730,46 @@ ul#slides li .content-wrap {
   height: 85px; }
 
 .service-item {
-  margin-top: 45px; }
+  #
+    margin-top: 45px;
+  text-align: center; }
 .service-item h2 {
-  margin-top: 5px;
+  margin-top: 20px;
   font-size: 20px;
   color: #fffffe; }
 .service-item p {
   font-size: 13px;
+  color: #7e969e; }
+
+/*--------------------------------------------------------------
+## Recent Projects Section
+--------------------------------------------------------------*/
+#recent-proj {
+  margin: 35px 0; }
+#recent-proj li p, #recent-proj .lslide.active {
+  background: #8dffc0;
+  height: 120px;
+  transition: all 0.2s; }
+#recent-proj li p:hover, #recent-proj .lslide.active:hover {
+  cursor: pointer;
+  background: #252531; }
+
+/*--------------------------------------------------------------
+## Testimonial Section
+--------------------------------------------------------------*/
+#testimonial-section {
+  background: #f6f6f6; }
+
+.testimonial-wrap {
+  padding: 40px;
+  background: #ffffff;
+  font-size: 16px; }
+.testimonial-wrap::before {
+  content: '\f10d';
+  font-family: 'FontAwesome';
+  font-size: 45px;
+  color: #269add; }
+
+#testimonial {
+  padding: 30px 0; }
   color: #fff; }
