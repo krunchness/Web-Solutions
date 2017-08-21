@@ -3,7 +3,6 @@ jQuery(document).ready(function ($) {
         adaptiveHeight:false,
         enableDrag:false,
         item:1,
-        slideMargin:0,
         loop:false,
         auto:false,
         speed:1000,
@@ -23,6 +22,8 @@ jQuery(document).ready(function ($) {
         enableDrag: false,
         pause: 3000,
         enableTouch: true,
+        pager: false,
+
     });
 
     $('#testimonial').lightSlider({
