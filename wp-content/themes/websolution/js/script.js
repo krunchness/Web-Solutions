@@ -11,5 +11,15 @@ jQuery(document).ready(function ($) {
         enableTouch: true,
     });
 
-
+    $('#recent-proj').lightSlider({
+        adaptiveHeight:true,
+        item:3,
+        slideMargin:30,
+        loop:true,
+        auto: true,
+        pager: false,
+        controls: false,
+        enableDrag: false,
+        pause: 3000,
+    });
 });

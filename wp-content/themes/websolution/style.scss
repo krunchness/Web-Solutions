@@ -51,15 +51,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Banner
     ## Welcome Section
     ## Services Section
+    ## Recent Projects Section
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
 $bold-font: "Anton", sans-serif;
-$raleway-font: 'Raleway', sans-serif;
+$raleway-font: "Raleway", sans-serif;
 
 /*--------------------------------------------------------------
 # Normalize
@@ -972,7 +974,7 @@ ul#slides {
             margin: 0 auto;
             left: 0;
             right: 0;
-            top: 150px;
+            top: 105px;
             padding: 0 10%;
         }
     }
@@ -1040,6 +1042,7 @@ ul#slides {
 #services-section {
     background: url("../websolution/images/services-bg.jpg");
     background-size: cover;
+    padding: 60px;
 }
 
 .img-container img {
@@ -1047,8 +1050,10 @@ ul#slides {
 }
 
 .service-item {
+    #
     margin-top: 45px;
     text-align: center;
+
     h2 {
         margin-top: 20px;
         font-size: 20px;
@@ -1058,5 +1063,29 @@ ul#slides {
     p {
         font-size: 13px;
         color: #7e969e;
+    }
+}
+
+/*--------------------------------------------------------------
+## Recent Project Section
+--------------------------------------------------------------*/
+#recent-projects {
+    h2 {
+        font-size: 35px;
+    }
+}
+
+#recent-proj {
+    margin: 30px 0;
+
+    li p, .lslide.active {
+        background: #8dffc0;
+        height: 120px;
+        transition: all 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            background: #252531;
+        }
     }
 }

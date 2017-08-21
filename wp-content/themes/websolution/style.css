@@ -50,6 +50,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Banner
     ## Welcome Section
     ## Services Section
+    ## Recent Projects Section
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
@@ -660,7 +661,7 @@ ul#slides li .content-wrap {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 150px;
+  top: 105px;
   padding: 0 10%; }
 
 .banner-title {
@@ -711,13 +712,15 @@ ul#slides li .content-wrap {
 --------------------------------------------------------------*/
 #services-section {
   background: url("../websolution/images/services-bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  padding: 60px; }
 
 .img-container img {
   height: 85px; }
 
 .service-item {
-  margin-top: 45px;
+  #
+    margin-top: 45px;
   text-align: center; }
 .service-item h2 {
   margin-top: 20px;
@@ -726,3 +729,19 @@ ul#slides li .content-wrap {
 .service-item p {
   font-size: 13px;
   color: #7e969e; }
+
+/*--------------------------------------------------------------
+## Recent Project Section
+--------------------------------------------------------------*/
+#recent-projects h2 {
+  font-size: 35px; }
+
+#recent-proj {
+  margin: 30px 0; }
+#recent-proj li p, #recent-proj .lslide.active {
+  background: #8dffc0;
+  height: 120px;
+  transition: all 0.2s; }
+#recent-proj li p:hover, #recent-proj .lslide.active:hover {
+  cursor: pointer;
+  background: #252531; }

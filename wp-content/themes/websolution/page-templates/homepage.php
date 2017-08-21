@@ -96,7 +96,7 @@ get_header(); ?>
 									</div>
 								</div>
 								<div class="col-md-12">
-									<h2>Cross Browsers and OS Supported</h2>
+									<h2>Cross-Browser and OS Supported</h2>
 									<p>The world of iOS and MacOS applications is front and center of the most of our projects. Basically, working on crafting apps that run on Apple devices is the..</p>
 								</div>
 							</div>
@@ -131,6 +131,25 @@ get_header(); ?>
 									<p>Mobile devices are by far the most dynamic of all enterprise platforms in IT. with custome software development companies like our crafting , coding , designing and..</p>
 								</div>
 							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="recent-projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-center">Check Our Recent Projects</h2>
+						<div class="container">
+							<div class="row">
+								<ul id="recent-proj" class="lightSlider">
+							    	<li><p></p></li>
+							    	<li><p></p></li>
+							    	<li><p></p></li>
+							    </ul>
 							</div>
 						</div>
 					</div>
