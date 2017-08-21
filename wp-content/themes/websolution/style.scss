@@ -56,11 +56,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
-
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
 
 $bold-font: "Anton", sans-serif;
-$merriweather-font: "Merriweather", serif;
+$raleway-font: 'Raleway', sans-serif;
 
 /*--------------------------------------------------------------
 # Normalize
@@ -601,7 +600,7 @@ a:active {
     }
 
     .current_page_item a {
-        color: #582334;
+        color: #000000;
     }
 
     a {
@@ -1013,7 +1012,7 @@ ul#slides {
 }
 
 .welcome-head {
-    font-family: $merriweather-font;
+    font-family: $raleway-font;
     font-size: 47px;
     color: #87bc37;
     margin-bottom: 2px;
@@ -1049,9 +1048,9 @@ ul#slides {
 
 .service-item {
     margin-top: 45px;
-
+    text-align: center;
     h2 {
-        margin-top: 5px;
+        margin-top: 20px;
         font-size: 20px;
         color: #fffffe;
     }

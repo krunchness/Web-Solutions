@@ -55,7 +55,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Anton");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -397,7 +397,7 @@ a:hover, a:active {
 .main-navigation li:hover > ul, .main-navigation li li.focus > ul {
   left: auto; }
 .main-navigation .current_page_item a {
-  color: #582334; }
+  color: #000000; }
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -689,7 +689,7 @@ ul#slides li .content-wrap {
   margin: 0; }
 
 .welcome-head {
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 47px;
   color: #87bc37;
   margin-bottom: 2px; }
@@ -717,9 +717,10 @@ ul#slides li .content-wrap {
   height: 85px; }
 
 .service-item {
-  margin-top: 45px; }
+  margin-top: 45px;
+  text-align: center; }
 .service-item h2 {
-  margin-top: 5px;
+  margin-top: 20px;
   font-size: 20px;
   color: #fffffe; }
 .service-item p {
