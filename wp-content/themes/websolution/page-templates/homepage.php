@@ -161,44 +161,25 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Clients Testimonials</h2>
-						<div class="container">
-							<div class="row">
-								<ul id="testimonial" class="lightSlider">
-							    	<li>
-							    		<div class="testimonial-wrap">
-							    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							    			</p>
-							    		</div>
-							    	</li>
-							    	<li>
-							    		<div class="testimonial-wrap">
-							    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							    			</p>
-							    		</div>
-							    	</li>
-							    	<li>
-							    		<div class="testimonial-wrap">
-							    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							    			</p>
-							    		</div>
-							    	</li>
-							    </ul>
-							</div>
+						<h2>Our Clients Testimonials</h2>
+						<div class="owl-carousel owl-theme">
+						    <div class="item">
+						    	<div class="testimonial-wrap">
+						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,  </p>
+						    	</div>
+						    </div>
+						    <div class="item">
+						    	<div class="testimonial-wrap">
+						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,  </p>
+						    	</div>
+						    </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section></section>
+		<section>
 
-
-		<section class="pricelist-section">
-			<div class="container">
-				<div class="row">
-					
-				</div>
-			</div>
 		</section>
 	</main><!-- #main -->
 </div><!-- #primary-->

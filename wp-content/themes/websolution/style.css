@@ -52,6 +52,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Services Section
     ## Recent Projects Section
     ## Testimonial Section
+# Footer
+    ## Footer CTA
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
@@ -251,8 +253,9 @@ big {
   font-size: 125%; }
 
 #recent-projects h2, #testimonial-section h2 {
-  font-size: 35px;
-  text-align: center; }
+  font-size: 37px;
+  text-align: center;
+  padding: 15px 0; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -625,9 +628,6 @@ embed, iframe, object {
   background-color: #a2beff;
   padding: 15px; }
 
-.footer-nav .menu {
-  display: block; }
-
 /*--------------------------------------------------------------
 # Custom CSS
 --------------------------------------------------------------*/
@@ -666,15 +666,12 @@ ul#slides li .content-wrap {
   margin: 0 auto;
   left: 0;
   right: 0;
-
   top: 105px;
-
   top: 125px;
-
   padding: 0 10%; }
 
 .banner-title {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 25px; }
 
 .banner-desc {
@@ -720,11 +717,9 @@ ul#slides li .content-wrap {
 ## Services Section
 --------------------------------------------------------------*/
 #services-section {
-  background: url("../websolution/images/services-bg.jpg");
+  background: url("../websolution/images/services-web-bg.jpg");
   background-size: cover;
   padding: 60px; }
-  background: url("../websolution/images/services-web-bg.jpg");
-  background-size: cover; }
 
 .img-container img {
   height: 85px; }
@@ -739,7 +734,7 @@ ul#slides li .content-wrap {
   color: #fffffe; }
 .service-item p {
   font-size: 13px;
-  color: #7e969e; }
+  color: #fff; }
 
 /*--------------------------------------------------------------
 ## Recent Projects Section
@@ -758,9 +753,11 @@ ul#slides li .content-wrap {
 ## Testimonial Section
 --------------------------------------------------------------*/
 #testimonial-section {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  padding-bottom: 50px; }
 
 .testimonial-wrap {
+  text-align: left;
   padding: 40px;
   background: #ffffff;
   font-size: 16px; }
@@ -770,6 +767,39 @@ ul#slides li .content-wrap {
   font-size: 45px;
   color: #269add; }
 
-#testimonial {
-  padding: 30px 0; }
-  color: #fff; }
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.footer-cta {
+  text-align: center;
+  background: #353539;
+  color: #fefefe;
+  padding: 12px 0; }
+.footer-cta h3 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-top: 10px; }
+
+.site-info {
+  background: #222222;
+  padding: 25px 0 15px 0; }
+
+.footer-nav .menu {
+  display: block;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 15px;
+  list-style: none; }
+.footer-nav .menu a {
+  padding-left: 5px;
+  color: #c1c2c3; }
+.footer-nav .menu li::before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  color: #c1c2c3; }
+
+.widget-title {
+  font-size: 30px;
+  color: #c1c2c3; }

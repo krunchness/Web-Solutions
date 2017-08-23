@@ -89,15 +89,6 @@ add_action( 'after_setup_theme', 'underscore_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function underscore_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'underscore' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Column One', 'underscore' ),
@@ -117,6 +108,26 @@ function underscore_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column Three', 'underscore' ),
+		'id'            => 'footer-three',
+		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column Four', 'underscore' ),
+		'id'            => 'footer-four',
+		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'underscore_widgets_init' );
 
@@ -128,6 +139,8 @@ function underscore_scripts() {
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap/css/bootstrap.min.css');
 	wp_enqueue_style( 'lightslider-style', get_template_directory_uri() . '/inc/lightslider/src/css/lightslider.css' , array(), null);
 	wp_enqueue_style( 'hamburg-style', get_template_directory_uri() . '/css/hamburgers.min.css' , array(), null);
+	wp_enqueue_style( 'carousel-style', get_template_directory_uri() . '/css/owl.carousel.min.css' , array(), null);
+	wp_enqueue_style( 'carousel-two-style', get_template_directory_uri() . '/css/owl.theme.min.css' , array(), null);
 	wp_enqueue_style( 'underscore-style', get_stylesheet_uri() );
 
 	//Fonts
@@ -141,6 +154,7 @@ function underscore_scripts() {
 	wp_enqueue_script( 'underscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/script.js', array(), '20151215', true );
 	wp_enqueue_script( 'lightslider', get_template_directory_uri() . '/inc/lightslider/src/js/lightslider.js', array(), true );
+	wp_enqueue_script( 'carousel-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), true );
 	wp_enqueue_script( 'underscore-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

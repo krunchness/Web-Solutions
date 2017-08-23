@@ -53,6 +53,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Services Section
     ## Recent Projects Section
     ## Testimonial Section
+# Footer
+    ## Footer CTA
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
@@ -360,8 +362,9 @@ big {
 
 #recent-projects, #testimonial-section {
     h2 {
-        font-size: 35px;
+        font-size: 37px;
         text-align: center;
+        padding: 15px 0;
     }
 }
 
@@ -927,11 +930,7 @@ object {
     padding: 15px;
 }
 
-.footer-nav {
-    .menu {
-        display: block;
-    }
-}
+
 
 /*--------------------------------------------------------------
 # Custom CSS
@@ -990,7 +989,7 @@ ul#slides {
 }
 
 .banner-title {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 25px;
 }
 
@@ -1099,6 +1098,7 @@ ul#slides {
 --------------------------------------------------------------*/
 #testimonial-section {
     background: #f6f6f6;
+    padding-bottom: 50px;
 }
 
 .testimonial-wrap {
@@ -1109,11 +1109,56 @@ ul#slides {
         color: #269add;
     }
 
+    text-align: left;
     padding: 40px;
     background: #ffffff;
     font-size: 16px;
 }
 
-#testimonial{
-    padding: 30px 0;
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.footer-cta {
+    text-align: center;
+    background: #353539;
+    color: #fefefe;
+    padding: 12px 0;
+
+    h3 {
+        font-size: 30px;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 2px;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+}
+
+.site-info{
+    background: #222222;
+    padding: 25px 0 15px 0;
+}
+
+.footer-nav {
+    .menu {
+        display: block;
+        margin: 0 0 0 10px;
+        padding: 0;
+        font-size: 15px;
+        list-style: none;
+        a{
+            padding-left: 5px;
+            color: #c1c2c3;
+        }
+
+        li::before{
+            content: "\f0da";
+            font-family: 'FontAwesome';
+            color: #c1c2c3;
+        }
+    }
+}
+
+.widget-title{
+    font-size: 30px;
+    color: #c1c2c3;
 }

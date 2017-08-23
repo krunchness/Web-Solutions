@@ -26,18 +26,23 @@ jQuery(document).ready(function ($) {
 
     });
 
-    $('#testimonial').lightSlider({
-        adaptiveHeight:true,
-        item:3,
-        slideMargin:30,
+    $('.owl-carousel').owlCarousel({
+        rtl:true,
         loop:true,
-        auto: true,
-        pager: false,
-        controls: false,
-        enableDrag: false,
-        pause: 5000,
-        enableTouch: true,
+        margin:10,
+        autoplay: true,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
     });
-
    
 });
