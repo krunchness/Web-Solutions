@@ -666,11 +666,8 @@ ul#slides li .content-wrap {
   margin: 0 auto;
   left: 0;
   right: 0;
-
   top: 105px;
-
   top: 125px;
-
   padding: 0 10%; }
 
 .banner-title {
@@ -720,11 +717,9 @@ ul#slides li .content-wrap {
 ## Services Section
 --------------------------------------------------------------*/
 #services-section {
-  background: url("../websolution/images/services-bg.jpg");
+  background: url("../websolution/images/services-web-bg.jpg");
   background-size: cover;
   padding: 60px; }
-  background: url("../websolution/images/services-web-bg.jpg");
-  background-size: cover; }
 
 .img-container img {
   height: 85px; }
@@ -739,7 +734,7 @@ ul#slides li .content-wrap {
   color: #fffffe; }
 .service-item p {
   font-size: 13px;
-  color: #7e969e; }
+  color: #fff; }
 
 /*--------------------------------------------------------------
 ## Recent Projects Section
@@ -772,4 +767,3 @@ ul#slides li .content-wrap {
 
 #testimonial {
   padding: 30px 0; }
-  color: #fff; }
