@@ -52,12 +52,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Services Section
     ## Recent Projects Section
     ## Testimonial Section
+# Footer
+    ## Footer CTA
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Fonts
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Anton");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url(//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -251,8 +253,9 @@ big {
   font-size: 125%; }
 
 #recent-projects h2, #testimonial-section h2 {
-  font-size: 35px;
-  text-align: center; }
+  font-size: 37px;
+  text-align: center;
+  padding: 15px 0; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -375,7 +378,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-navigation {
   margin: auto;
-  font-family: "Anton", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase; }
 
 .main-navigation {
@@ -399,19 +402,24 @@ a:hover, a:active {
   background-color: #ffffff; }
 .main-navigation li {
   float: left;
-  position: relative; }
+  position: relative;
+  padding-right: 20px; }
+.main-navigation li:last-child {
+  padding-right: 0; }
 .main-navigation li:hover > ul, .main-navigation li li.focus > ul {
   left: auto; }
 .main-navigation .current_page_item a {
-  color: #000000; }
+  color: #70B2B9; }
 .main-navigation a {
   display: block;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 13px;
   color: #a5b2be;
-  letter-spacing: 1.5px; }
+  letter-spacing: 0.5px;
+  color: #393F44;
+  transition: color 0.4s ease 0s; }
 .main-navigation a:hover {
-  color: #582334; }
+  color: #70B2B9; }
 
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent; }
@@ -610,23 +618,12 @@ embed, iframe, object {
 .wp-caption-text {
   text-align: center; }
 
-.top-header {
-  background: #5c5c5c;
-  padding-top: 10px;
-  height: 3em;
-  color: #ffffff; }
-.top-header .align-center {
-  text-align: center; }
-
 .site-logo {
   text-align: center;
   width: 380px;
   height: 80px;
   background-color: #a2beff;
   padding: 15px; }
-
-.footer-nav .menu {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Custom CSS
@@ -636,6 +633,27 @@ embed, iframe, object {
 --------------------------------------------------------------*/
 .site-logo {
   display: none; }
+
+.header-hr {
+  margin: 10px;
+  margin-bottom: 0;
+  color: rgba(57, 63, 68, 0.15); }
+
+.top-header {
+  margin-top: 25px; }
+
+.social-top {
+  padding-left: 12px;
+  font-size: 18px;
+  color: #000000; }
+
+.site-logo-txt {
+  padding: 20px;
+  text-transform: uppercase;
+  font: normal normal normal 24px/1.46em BrandonGrotW01-Light,sans-serif; }
+.site-logo-txt a {
+  color: #8b8484;
+  font-size: 28px; }
 
 /*--------------------------------------------------------------
 # Homepage
@@ -671,7 +689,7 @@ ul#slides li .content-wrap {
   padding: 0 10%; }
 
 .banner-title {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 25px; }
 
 .banner-desc {
@@ -681,6 +699,48 @@ ul#slides li .content-wrap {
   font-size: 14px;
   border-radius: 5px;
   padding: 12px; }
+
+#homepage-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../websolution/images/banner-bg-two.jpg");
+  padding: 10% 0 0 18%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px; }
+#homepage-banner h1 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font: normal normal normal 65px BrandonGrotW01-Light, sans-serif; }
+#homepage-banner p {
+  font-size: 35px;
+  color: #ffffff;
+  font-family: 'BrandonGrotW01-Light', sans-serif; }
+#homepage-banner button {
+  padding: 14px 20px;
+  font-size: 18px;
+  border-radius: 35px;
+  background: #ffffff;
+  font-family: 'BrandonGrotW01-Light', sans-serif; }
+
+/*--------------------------------------------------------------
+## What We Offer Section
+--------------------------------------------------------------*/
+#what-we-offer {
+  background: #E5F0F1;
+  font-family: 'BrandonGrotW01-Light', sans-serif;
+  padding: 25px 10% 50px 10%; }
+#what-we-offer span {
+  font-size: 25px; }
+#what-we-offer p {
+  font-size: 21px;
+  margin-top: 15px; }
+
+.offer-title {
+  font: normal normal normal 40px BrandonGrotW01-Light,sans-serif;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 5px; }
 
 /*--------------------------------------------------------------
 ## Welcome Section
@@ -736,6 +796,40 @@ ul#slides li .content-wrap {
   font-size: 13px;
   color: #fff; }
 
+#services {
+  padding-bottom: 70px; }
+
+.service-container {
+  text-align: center;
+  color: #737475;
+  position: absolute;
+  font-family: 'BrandonGrotW01-Light', sans-serif;
+  top: 15%;
+  left: 0;
+  right: 0; }
+.service-container h2 {
+  font: normal normal normal 35px BrandonGrotW01-Light,sans-serif;
+  text-transform: uppercase; }
+.service-container p {
+  font-size: 30px;
+  margin-bottom: 1.3em; }
+.service-container button {
+  font-family: 'BrandonGrotW01-Light', sans-serif;
+  padding: 15px 10px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  background: transparent;
+  border: #000000 solid 1px;
+  margin-bottom: 40px;
+  transition: all 0.2s; }
+.service-container button:hover {
+  background-color: #393f44;
+  color: #ffffff; }
+
+.img-svc-container {
+  padding: 0; }
+
 /*--------------------------------------------------------------
 ## Recent Projects Section
 --------------------------------------------------------------*/
@@ -753,9 +847,15 @@ ul#slides li .content-wrap {
 ## Testimonial Section
 --------------------------------------------------------------*/
 #testimonial-section {
-  background: #f6f6f6; }
+  background: #E5F0F1;
+  padding-bottom: 50px; }
+#testimonial-section h2 {
+  font-family: 'BrandonGrotW01-Light', sans-serif;
+  padding: 30px;
+  font-size: 40px; }
 
 .testimonial-wrap {
+  text-align: left;
   padding: 40px;
   background: #ffffff;
   font-size: 16px; }
@@ -765,5 +865,39 @@ ul#slides li .content-wrap {
   font-size: 45px;
   color: #269add; }
 
-#testimonial {
-  padding: 30px 0; }
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.footer-cta {
+  text-align: center;
+  background: #353539;
+  color: #fefefe;
+  padding: 12px 0; }
+.footer-cta h3 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-top: 10px; }
+
+.site-info {
+  background: #222222;
+  padding: 25px 0 15px 0; }
+
+.footer-nav .menu {
+  display: block;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 15px;
+  list-style: none; }
+.footer-nav .menu a {
+  padding-left: 5px;
+  color: #c1c2c3; }
+.footer-nav .menu li::before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  color: #c1c2c3; }
+
+.widget-title {
+  font-size: 30px;
+  color: #c1c2c3; }

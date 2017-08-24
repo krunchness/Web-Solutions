@@ -13,7 +13,9 @@
 		<div class="footer-cta">
 			<div class="container">
 				<div class="row">
-					<h3>Not Sure where to start? Let's talk websites</h3>
+					<div class="col-md-12 text-center">
+						<h3>Not Sure where to start? Let's talk websites</h3>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -22,15 +24,21 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="footer-nav">
-				<div class="row">
-					<div class="large-3 columns">
-						<?php dynamic_sidebar('footer'); ?>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<?php dynamic_sidebar('footer'); ?>
+						</div>
+						<div class="col-md-3">
+							<?php dynamic_sidebar('footer-two'); ?>
+						</div>
+						<div class="col-md-3">
+							<?php dynamic_sidebar('footer-three'); ?>
+						</div>
+						<div class="col-md-3">
+							<?php dynamic_sidebar('footer-four'); ?>
+						</div>
 					</div>
-					<div class="large-3 columns">
-						<?php dynamic_sidebar('footer-two'); ?>
-					</div>
-					<div class="large-3 columns"></div>
-					<div class="large-3 columns"></div>
 				</div>
 			</div>
 		</div><!-- .site-info -->

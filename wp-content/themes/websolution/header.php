@@ -25,22 +25,18 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscore' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<!-- <div class="site-branding">
-			<!-- Site Info -->
-			<!-- <div class="top-header">
-				<div class="row align-center">
-					<div class="large-3 medium-4">
-						<p>Location</p>
-					</div>
-					<div class="large-3 medium-4">
-						<p>Contact No.</p>
-					</div>
-					<div class="large-3 medium-4">
-						<p>Telephone No.</p>
+			<div class="top-header">
+				<div class="container">
+					<div class="d-flex flex-row justify-content-end">
+						<div class="col-md-2 text-right">
+							<span class="social-top"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+							<span class="social-top"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+							<span class="social-top"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+						</div>
 					</div>
 				</div>
-			</div> -->
-
+			</div>
+			<hr class="header-hr">
 			<!-- Mid Header -->
 			<div class="mid-header">
 				<div class="container">
@@ -49,7 +45,8 @@
 						<div class="col-md-6">
 							<!-- <h1 class="site-logo">380 x 80</h1> -->
 							<!-- redux site-logo -->
-							<img src="<?php echo get_template_directory_uri().'/images/site-logo.png'; ?>" class="site-logo">
+							<!-- <img src="<?php echo get_template_directory_uri().'/images/site-logo.png'; ?>" class="site-logo"> -->
+							<h1 class="site-logo-txt"><a href="">Websolution</a></h1>
 						</div>
 
 						<!-- site-navigation menu -->

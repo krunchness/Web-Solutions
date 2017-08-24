@@ -7,35 +7,66 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		
-		<?php if ($redux_data['opt-switch']): ?>
-			<?php get_template_part( 'template-parts/home', 'slider' ); ?>
-		<?php endif ?>
-		
-		<section id="welcome-section">
+		<section id="homepage-banner">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/responsive-design.png" class="img-responsive">
-					</div>
-					<div class="col-md-6">
-						<h2 class="welcome-head">Welcome!</h2>
-						<a href="#"><button class="possib-btn">The Possibilities Are Unlimited</button></a>
-						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet</span>
-					<div class="row class welccontent-container">
-						<div class="col-md-6">
-							<span class="what-we-do">What We Do</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-						<div class="col-md-6">
-							<span class="who-we-are">Who We Are</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
+						<h1>HELLO. WE’RE WEBSOLUTIONS.</h1>
+						<p>Ideas for the Internet</p>
+						<a href=""><button>Learn More</button></a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="services-section">
+		
+		<section id="what-we-offer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="offer-title">What we Offer</h2>
+						<span>High Quality Web Development at Affordable Rates</span>
+						<p>Have an idea that you’re trying to bring to life online? We bring a wide array of professional services in web development, design, and project management to the work we’re involved with. We can manage it all while maintaining high standards of quality. Call today and let us transform your online presence into something exceptional.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<div class="service-container">
+							<h2>Web Development</h2>
+							<p>Exceeding Expectations</p>
+							<a href=""><button>Get in Touch</button></a>
+						</div>
+					</div>
+					<div class="col-md-5 img-svc-container">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/cross-browser.jpg">
+					</div>
+					<div class="col-md-5 img-svc-container">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/cross-browser.jpg">
+					</div>
+					<div class="col-md-5">
+						<div class="service-container">
+							<h2>Web Design</h2>
+							<p>Committed to Quality</p>
+							<a href=""><button>Get in Touch</button></a>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="service-container">
+							<h2>Cross-Browser Supported</h2>
+							<p>Loads of Experience</p>
+							<a href=""><button>Get in Touch</button></a>
+						</div>
+					</div>
+					<div class="col-md-5 img-svc-container">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/cross-browser.jpg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section id="services-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -101,7 +132,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>s
 					<div class="col-md-4">
 						<div class="service-item">
 							<div class="row">
@@ -136,6 +167,36 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+		</section> -->
+
+		<section id="testimonial-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Clients Testimonials</h2>
+						<div class="owl-carousel owl-theme">
+						    <div class="item">
+						    	<div class="testimonial-wrap">
+						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    		</p>
+						    	</div>
+						    </div>
+						   <div class="item">
+						    	<div class="testimonial-wrap">
+						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    		</p>
+						    	</div>
+						    </div>
+						    <div class="item">
+						    	<div class="testimonial-wrap">
+						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    		</p>
+						    	</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="recent-projects">
@@ -145,58 +206,16 @@ get_header(); ?>
 						<h2>Check Our Recent Projects</h2>
 						<div class="container">
 							<div class="row">
-								<ul id="recent-proj" class="lightSlider">
-							    	<li><p></p></li>
-							    	<li><p></p></li>
-							    	<li><p></p></li>
-							    </ul>
+								<div class="col-md-12">
+									<ul id="recent-proj" class="lightSlider">
+								    	<li><p></p></li>
+								    	<li><p></p></li>
+								    	<li><p></p></li>
+								    </ul>
+							    </div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="testimonial-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Clients Testimonials</h2>
-						<div class="container">
-							<div class="row">
-								<ul id="testimonial" class="lightSlider">
-							    	<li>
-							    		<div class="testimonial-wrap">
-							    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							    			</p>
-							    		</div>
-							    	</li>
-							    	<li>
-							    		<div class="testimonial-wrap">
-							    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							    			</p>
-							    		</div>
-							    	</li>
-							    	<li>
-							    		<div class="testimonial-wrap">
-							    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							    			</p>
-							    		</div>
-							    	</li>
-							    </ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section></section>
-
-
-		<section class="pricelist-section">
-			<div class="container">
-				<div class="row">
-					
 				</div>
 			</div>
 		</section>
