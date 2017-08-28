@@ -135,6 +135,7 @@ add_action( 'widgets_init', 'underscore_widgets_init' );
 function underscore_scripts() {
 	//styles
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap/css/bootstrap.min.css');
+	wp_enqueue_style( 'flaticon-css', get_template_directory_uri() . '/fonts/flaticon/font/flaticon.css');
 	wp_enqueue_style( 'lightslider-style', get_template_directory_uri() . '/inc/lightslider/src/css/lightslider.css' , array(), null);
 	wp_enqueue_style( 'hamburg-style', get_template_directory_uri() . '/css/hamburgers.min.css' , array(), null);
 	wp_enqueue_style( 'underscore-style', get_stylesheet_uri() );

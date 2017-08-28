@@ -255,7 +255,8 @@ big {
 #recent-projects h2, #testimonial-section h2 {
   font-size: 37px;
   text-align: center;
-  padding: 15px 0; }
+  padding: 15px 0;
+  font-family: 'BrandonGrotW01-Light', sans-serif; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -836,12 +837,16 @@ ul#slides li .content-wrap {
 #recent-proj {
   margin: 35px 0; }
 #recent-proj li p, #recent-proj .lslide.active {
-  background: #8dffc0;
+  background: #7a7c7c;
   height: 120px;
   transition: all 0.2s; }
 #recent-proj li p:hover, #recent-proj .lslide.active:hover {
   cursor: pointer;
   background: #252531; }
+
+#recent-projects {
+  padding-top: 25px;
+  padding-bottom: 40px; }
 
 /*--------------------------------------------------------------
 ## Testimonial Section
@@ -856,14 +861,19 @@ ul#slides li .content-wrap {
 
 .testimonial-wrap {
   text-align: left;
-  padding: 40px;
-  background: #ffffff;
-  font-size: 16px; }
+  padding: 0 100px;
+  font-size: 32px; }
 .testimonial-wrap::before {
-  content: '\f10d';
-  font-family: 'FontAwesome';
-  font-size: 45px;
-  color: #269add; }
+  content: '\f100';
+  font-family: "Flaticon";
+  font-size: 90px;
+  color: #393f44; }
+.testimonial-wrap p {
+  color: #7f7f7f;
+  font-family: 'BrandonGrotW01-Light', sans-serif; }
+
+.owl-nav, .owl-dots {
+  display: none; }
 
 /*--------------------------------------------------------------
 ## Footer

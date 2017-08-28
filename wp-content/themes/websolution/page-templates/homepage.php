@@ -41,10 +41,10 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="col-md-5 img-svc-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/cross-browser.jpg">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/web-development.jpg">
 					</div>
 					<div class="col-md-5 img-svc-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/cross-browser.jpg">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/web-design.jpg">
 					</div>
 					<div class="col-md-5">
 						<div class="service-container">
@@ -75,19 +75,19 @@ get_header(); ?>
 						<div class="owl-carousel owl-theme">
 						    <div class="item">
 						    	<div class="testimonial-wrap">
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    		<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia"
 						    		</p>
 						    	</div>
 						    </div>
 						   <div class="item">
 						    	<div class="testimonial-wrap">
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    		<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia"
 						    		</p>
 						    	</div>
 						    </div>
 						    <div class="item">
 						    	<div class="testimonial-wrap">
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    		<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia"
 						    		</p>
 						    	</div>
 						    </div>
