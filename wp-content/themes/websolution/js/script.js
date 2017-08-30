@@ -43,4 +43,15 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+
+
+   
 });
+
+var typed = new Typed("#typed", {
+  // Waits 1000ms after typing "First"
+        strings: ["^1500 HELLO, ^2000 WE'RE WEBSOLUTIONS."],
+        typeSpeed: 40,
+        smartBackspace: true,
+        showCursor: true,
+    });

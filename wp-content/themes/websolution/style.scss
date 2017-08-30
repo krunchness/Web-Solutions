@@ -1034,7 +1034,7 @@ ul#slides {
     background-size: cover;
     height: 700px;
 
-    h1 {
+    #typed {
         color: #ffffff;
         margin-bottom: 25px;
         font: normal normal normal 65px BrandonGrotW01-Light, sans-serif;
@@ -1053,6 +1053,42 @@ ul#slides {
         background: #ffffff;
         font-family: 'BrandonGrotW01-Light', sans-serif;
     }
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1129,7 +1165,6 @@ ul#slides {
     background-size: cover;
     padding: 60px;
 }
-
 
 #services {
     padding-bottom: 70px;
@@ -1211,6 +1246,7 @@ ul#slides {
         font-family: 'BrandonGrotW01-Light', sans-serif;
         padding: 30px;
         font-size: 40px;
+        padding-bottom: 0px;
     }
 }
 

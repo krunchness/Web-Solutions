@@ -46,3 +46,10 @@ function mobile_detect_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'mobile_detect_scripts' );
+
+
+
+function my_deregister_scripts(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );
