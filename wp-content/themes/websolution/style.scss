@@ -965,6 +965,14 @@ object {
     }
 }
 
+.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 5;
+}
+
 /*--------------------------------------------------------------
 # Homepage
 --------------------------------------------------------------*/
@@ -1167,7 +1175,7 @@ ul#slides {
 }
 
 #services {
-    padding-bottom: 70px;
+    padding: 70px 0;
 }
 
 .service-container {

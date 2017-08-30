@@ -656,6 +656,13 @@ embed, iframe, object {
   color: #8b8484;
   font-size: 28px; }
 
+.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 5; }
+
 /*--------------------------------------------------------------
 # Homepage
 --------------------------------------------------------------*/
@@ -807,7 +814,7 @@ ul#slides li .content-wrap {
   padding: 60px; }
 
 #services {
-  padding-bottom: 70px; }
+  padding: 70px 0; }
 
 .service-container {
   text-align: center;

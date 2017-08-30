@@ -38,7 +38,7 @@
 			</div>
 			<hr class="header-hr">
 			<!-- Mid Header -->
-			<div class="mid-header">
+			<div class="mid-header"  data-spy="affix" data-offset-top="197">
 				<div class="container">
 					<div class="row">
 						<!-- Site Logo -->

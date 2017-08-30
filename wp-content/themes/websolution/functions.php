@@ -151,6 +151,8 @@ function underscore_scripts() {
 
 	wp_enqueue_script( 'underscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'boostrap-js', get_template_directory_uri() . '/inc/bootstrap/js/bootstrap.min.js', array(), true );
+
 	wp_enqueue_script( 'typed-js', get_template_directory_uri() . '/js/typed.js', array(), true );
 
 

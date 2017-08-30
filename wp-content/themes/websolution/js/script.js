@@ -54,4 +54,7 @@ var typed = new Typed("#typed", {
         typeSpeed: 40,
         smartBackspace: true,
         showCursor: true,
+        
     });
+
+
