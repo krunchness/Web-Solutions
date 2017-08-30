@@ -656,6 +656,13 @@ embed, iframe, object {
   color: #8b8484;
   font-size: 28px; }
 
+.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 5; }
+
 /*--------------------------------------------------------------
 # Homepage
 --------------------------------------------------------------*/
@@ -709,7 +716,7 @@ ul#slides li .content-wrap {
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px; }
-#homepage-banner h1 {
+#homepage-banner #typed {
   color: #ffffff;
   margin-bottom: 25px;
   font: normal normal normal 65px BrandonGrotW01-Light, sans-serif; }
@@ -723,6 +730,30 @@ ul#slides li .content-wrap {
   border-radius: 35px;
   background: #ffffff;
   font-family: 'BrandonGrotW01-Light', sans-serif; }
+
+.typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+  color: #ffffff;
+  font-size: 60px; }
+
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0.0; } }
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+.typed-fade-out {
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0; }
 
 /*--------------------------------------------------------------
 ## What We Offer Section
@@ -783,7 +814,7 @@ ul#slides li .content-wrap {
   padding: 60px; }
 
 #services {
-  padding-bottom: 70px; }
+  padding: 70px 0; }
 
 .service-container {
   text-align: center;
@@ -842,7 +873,8 @@ ul#slides li .content-wrap {
 #testimonial-section h2 {
   font-family: 'BrandonGrotW01-Light', sans-serif;
   padding: 30px;
-  font-size: 40px; }
+  font-size: 40px;
+  padding-bottom: 0px; }
 
 .testimonial-wrap {
   text-align: left;

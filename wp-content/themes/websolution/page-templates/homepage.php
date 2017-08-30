@@ -11,7 +11,7 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1>HELLO. WE’RE WEBSOLUTIONS.</h1>
+						<span id="typed"></span>
 						<p>Ideas for the Internet</p>
 						<a href=""><button>Learn More</button></a>
 					</div>
@@ -23,7 +23,7 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h2 class="offer-title">What we Offer</h2>
+						<h1 class="offer-title">What we Offer</h1>
 						<span>High Quality Web Development at Affordable Rates</span>
 						<p>Have an idea that you’re trying to bring to life online? We bring a wide array of professional services in web development, design, and project management to the work we’re involved with. We can manage it all while maintaining high standards of quality. Call today and let us transform your online presence into something exceptional.</p>
 					</div>
