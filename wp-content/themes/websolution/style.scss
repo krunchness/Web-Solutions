@@ -967,10 +967,12 @@ object {
 
 .affix {
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     background: #FFFFFF;
     z-index: 5;
+    padding-top: 10px;
+    height: 100px;
 }
 
 /*--------------------------------------------------------------
