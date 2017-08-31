@@ -14,7 +14,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h3>Not Sure where to start? Let's talk websites</h3>
+						<h3>Have an Exciting Idea? Let's Talk and Have Some Coffee</h3>
 					</div>
 				</div>
 			</div>

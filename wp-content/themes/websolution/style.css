@@ -789,12 +789,6 @@ ul#slides li .content-wrap {
 #welcome-section span.what-we-do, #welcome-section span.who-we-are {
   margin: 0; }
 
-.welcome-head {
-  font-family: "Raleway", sans-serif;
-  font-size: 47px;
-  color: #87bc37;
-  margin-bottom: 2px; }
-
 .possib-btn {
   color: #87bc37;
   border-color: #87bc37;
@@ -854,8 +848,9 @@ ul#slides li .content-wrap {
 --------------------------------------------------------------*/
 #recent-proj {
   margin: 35px 0; }
+#recent-proj li {
+  padding-left: 10px; }
 #recent-proj li p, #recent-proj .lslide.active {
-  background: #7a7c7c;
   height: 120px;
   transition: all 0.2s; }
 #recent-proj li p:hover, #recent-proj .lslide.active:hover {
@@ -871,7 +866,8 @@ ul#slides li .content-wrap {
 --------------------------------------------------------------*/
 #testimonial-section {
   background: #E5F0F1;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-top: 10px; }
 #testimonial-section h2 {
   font-family: 'BrandonGrotW01-Light', sans-serif;
   padding: 30px;
@@ -891,9 +887,6 @@ ul#slides li .content-wrap {
   color: #7f7f7f;
   font-family: 'BrandonGrotW01-Light', sans-serif; }
 
-.owl-nav, .owl-dots {
-  display: none; }
-
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -904,7 +897,7 @@ ul#slides li .content-wrap {
   padding: 12px 0; }
 .footer-cta h3 {
   font-size: 30px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   font-weight: 800;
   margin-top: 10px; }

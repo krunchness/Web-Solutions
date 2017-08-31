@@ -63,8 +63,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-$bold-font: "Anton", sans-serif;
-$raleway-font: "Raleway", sans-serif;
 
 /*--------------------------------------------------------------
 # Normalize
@@ -1144,12 +1142,6 @@ ul#slides {
     }
 }
 
-.welcome-head {
-    font-family: $raleway-font;
-    font-size: 47px;
-    color: #87bc37;
-    margin-bottom: 2px;
-}
 
 .possib-btn {
     color: #87bc37;
@@ -1228,8 +1220,10 @@ ul#slides {
 #recent-proj {
     margin: 35px 0;
 
+    li{
+        padding-left: 10px;
+    }
     li p, .lslide.active {
-        background: #7a7c7c;
         height: 120px;
         transition: all 0.2s;
 
@@ -1251,7 +1245,7 @@ ul#slides {
 #testimonial-section {
     background: #E5F0F1;
     padding-bottom: 50px;
-
+        padding-top: 10px;
     h2 {
         font-family: 'BrandonGrotW01-Light', sans-serif;
         padding: 30px;
@@ -1278,9 +1272,6 @@ ul#slides {
     font-size: 32px;
 }
 
-.owl-nav, .owl-dots {
-    display: none;
-}
 
 /*--------------------------------------------------------------
 ## Footer
@@ -1293,7 +1284,7 @@ ul#slides {
 
     h3 {
         font-size: 30px;
-        font-family: "Raleway", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         letter-spacing: 2px;
         font-weight: 800;
         margin-top: 10px;
