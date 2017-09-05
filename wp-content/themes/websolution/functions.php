@@ -132,41 +132,63 @@ add_action( 'widgets_init', 'underscore_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function underscore_scripts() {
-	//styles
+function core_scripts() {
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap/css/bootstrap.min.css');
 	wp_enqueue_style( 'flaticon-css', get_template_directory_uri() . '/fonts/flaticon/font/flaticon.css');
-	wp_enqueue_style( 'lightslider-style', get_template_directory_uri() . '/inc/lightslider/src/css/lightslider.css' , array(), null);
-	wp_enqueue_style( 'hamburg-style', get_template_directory_uri() . '/css/hamburgers.min.css' , array(), null);
-	wp_enqueue_style( 'underscore-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'owl-style', get_template_directory_uri() . '/css/owl.carousel.min.css' , array(), null);
-	wp_enqueue_style( 'owl-two-style', get_template_directory_uri() . '/css/owl.theme.default.min.css' , array(), null);
+
 	//Fonts
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css' , array(), null);
 
-	//scripts
-	// wp_enqueue_script( 'website-JQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' );
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery-external', get_template_directory_uri().'/js/jquery-3.2.1.min.js', array(), '3.2.1', false );
 
 	wp_enqueue_script( 'underscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'boostrap-js', get_template_directory_uri() . '/inc/bootstrap/js/bootstrap.min.js', array(), true );
 
-	wp_enqueue_script( 'typed-js', get_template_directory_uri() . '/js/typed.js', array(), true );
 
+}add_action( 'wp_enqueue_scripts', 'core_scripts' );
+
+function libraries_scripts() {
+
+		//styles
+	wp_enqueue_style( 'lightslider-style', get_template_directory_uri() . '/inc/lightslider/src/css/lightslider.css' , array(), null);
+	wp_enqueue_style( 'hamburg-style', get_template_directory_uri() . '/css/hamburgers.min.css' , array(), null);
+	
+	wp_enqueue_style( 'owl-style', get_template_directory_uri() . '/css/owl.carousel.min.css' , array(), null);
+	wp_enqueue_style( 'owl-two-style', get_template_directory_uri() . '/css/owl.theme.default.min.css' , array(), null);
+
+
+	wp_enqueue_style( 'directionhover-two-style', get_template_directory_uri() . '/inc/directionhover/css/demo.css' , array(), null);	
+
+
+	wp_enqueue_style( 'directionhover-noJS', get_template_directory_uri() . '/inc/directionhover/css/noJS.css' , array(), null);
+
+	wp_enqueue_style( 'directionhover-style', get_template_directory_uri() . '/inc/directionhover/css/style.css' , array(), null);
+
+
+	//scripts
+	wp_enqueue_script( 'typed-js', get_template_directory_uri() . '/js/typed.js', array(), true );
 
 	wp_enqueue_script( 'owl-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), true );
 
-	wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/script.js', array(), '20151215', true );
 	wp_enqueue_script( 'lightslider', get_template_directory_uri() . '/inc/lightslider/src/js/lightslider.js', array(), true );
 	wp_enqueue_script( 'underscore-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+
+
+	wp_enqueue_script( 'directionhover-hoverdir', get_template_directory_uri() . '/inc/directionhover/js/jquery.hoverdir.js', array(), true );
+	wp_enqueue_script( 'directionhover-modernizr', get_template_directory_uri() . '/inc/directionhover/js/modernizr.custom.97074.js', array(), true );
+
+}add_action( 'wp_enqueue_scripts', 'libraries_scripts' );
+
+
+function my_scripts() {
+	wp_enqueue_style( 'my-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/script.js', array(), '20151215', true );
+
 }
-add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
+add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 /**
  * Implement the Custom Header feature.

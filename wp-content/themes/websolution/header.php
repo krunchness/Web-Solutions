@@ -53,7 +53,6 @@
 
 						<div class="col-md-6 site-navigation">
 							<nav id="site-navigation" class="main-navigation navbar" role="navigation">
-								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscore' ); ?></button>
 								<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'nav navbar-nav' ) ); ?>
 							</nav><!-- #site-navigation -->
 						</div>
