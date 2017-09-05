@@ -2,7 +2,7 @@
     list-style: none;
     height: 600px;
     position: relative;
-    margin: 20px auto;
+    margin: 20px 3em;
     padding: 0;
 }
 
@@ -13,6 +13,7 @@
     padding: 8px;
     position: relative;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 32%;
 }
 
 .da-thumbs li a,
@@ -44,3 +45,16 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
 }
+
+.grayscale-filter{
+	filter: grayscale(0%);
+	background: #65C7C6;
+}
+
+
+.da-thumbs li:hover .grayscale-filter{
+	
+	filter: grayscale(100%);
+}
+
+
