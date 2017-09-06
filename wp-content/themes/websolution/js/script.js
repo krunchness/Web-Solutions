@@ -43,4 +43,10 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+
+
+   $('#typed').Typed({
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 30,
+    });
 });

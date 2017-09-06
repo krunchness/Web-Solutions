@@ -11,7 +11,7 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1>HELLO. WE’RE WEBSOLUTIONS.</h1>
+						<h1 id="typed">HELLO. WE’RE WEBSOLUTIONS.</h1>
 						<p>Ideas for the Internet</p>
 						<a href=""><button>Learn More</button></a>
 					</div>
